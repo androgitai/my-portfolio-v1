@@ -1,29 +1,45 @@
-$colors: (
-  primary: ( // blue
-    300: 216 87% 60%,
-    400: 216 87% 40%,
-    500: 216 87% 20%,
-  ),
-  secondary: ( // purple
-    300: 277 50% 60%,
-    400: 277 50% 40%,
-    500: 277 50% 20%,
-  ),
-  accent: ( // red
-    300: 358 72% 70%,
-    400: 358 72% 53%,
-    500: 358 72% 30%,
-  ),
+$primary-base: 20;
+$secondary-base: 194;
+$accent-base: 52;
+$neutral-base: 0;
 
+// $color: hsl(20, 90%, 60%);
+// $color2: hsl(194, 89%, 40%);
+// $color3: hsl(52, 99%, 50%);
+
+$colors: (
+  primary: (
+    100: $primary-base 90% 96%,
+    200: $primary-base 90% 80%,
+    300: $primary-base 90% 70%,
+    400: $primary-base 90% 60%,
+    500: $primary-base 90% 50%,
+  ),
+  secondary: (
+    300: $secondary-base 89% 70%,
+    400: $secondary-base 89% 50%,
+    500: $secondary-base 89% 30%,
+    700: $secondary-base 89% 20%,
+    800: $secondary-base 89% 10%,
+    900: $secondary-base 89% 5%,
+  ),
+  accent: (
+    300: $accent-base 100% 70%,
+    400: $accent-base 100% 50%,
+    500: $accent-base 100% 30%,
+  ),
   neutral: (
-    100: 0 0% 100%,
-    200: 0 0% 87%,
-    300: 0 0% 80%,
-    400: 0 0% 70%,
-    500: 0 0% 60%,
-    600: 0 0% 50%,
-    700: 0 0% 40%,
-    800: 0 0% 30%,
-    900: 0 0% 15%,  
-  )
+    100: $neutral-base 0% 100%,
+    150: $neutral-base 0% 96%,
+    200: $neutral-base 0% 87%,
+    300: $neutral-base 0% 80%,
+    400: $neutral-base 0% 70%,
+    500: $neutral-base 0% 60%,
+    600: $neutral-base 0% 50%,
+    700: $neutral-base 0% 40%,
+    800: $neutral-base 0% 30%,
+    900: $neutral-base 0% 15%,
+    950: $neutral-base 0% 5%,
+    backdrop: $neutral-base 0% 5% 50%,
+  ),
 );

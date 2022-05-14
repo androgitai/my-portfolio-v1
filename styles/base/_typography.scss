@@ -1,53 +1,55 @@
-* { // this is a bad idea, but works for now
-  font-variation-settings:
-    'wght' var(--font-weight, 375),
-    'wdth' var(--font-width, 80);
-}
- 
 body {
   font-size: var(--fs-400);
-  font-family: 'Alaska', sans-serif;
+  font-family: 'Comfortaa';
+  // font-family: 'Poppins';
   color: var(--clr-neutral-900);
-  letter-spacing: -.5px;
+  letter-spacing: -0.5px;
 }
- 
-h1, h2, h3, h4 { 
-  --font-weight: 700;
-  --font-width: 80;
-  font-weight: normal;
-  font-stretch: 100%;
+
+h1,
+h2 {
+  font-weight: 700;
   line-height: 1.1;
-  color: var(--clr-neutral-800);
+  color: var(--clr-neutral-150);
+  span {
+    font-family: 'Comfortaa';
+    color: var(--clr-primary-400);
+    font-style: italic;
+  }
 }
 
-h1 {
-  --font-weight: 900;
-  color: var(--clr, var(--clr-primary-400));
+h3,
+h4 {
+  font-weight: normal;
+  line-height: 1.2;
+  color: var(--clr-neutral-900);
+  span {
+    font-family: 'Comfortaa';
+    color: var(--clr-primary-400);
+    font-style: italic;
+  }
 }
 
-// This is setting the font-sizes
-// based on the ones in the abstract
-// folder, go there to make updates
+// Font-sizes based on the ones in the abstract folder
 
 h1,
 .h1 {
-  font-size: --fs-800;
+  font-size: var(--fs-700);
 }
 
 h2,
 .h2 {
-  --flow-spacer: 1.5em;
-  font-size: --fs-700;
+  font-size: var(--fs-700);
 }
 h3,
 .h3 {
   --flow-spacer: 1.5em;
-  font-size: --fs-600;
+  font-size: var(--fs-600);
 }
 
 h4,
 .h4 {
-  font-size: --fs-500;
+  font-size: var(--fs-500);
 }
 
 small,
@@ -56,9 +58,8 @@ small,
 }
 
 strong {
-  --font-weight: 500;
   font-weight: normal;
-  }
+}
 
 a {
   color: var(--clr-primary-400);
@@ -66,12 +67,12 @@ a {
   &:hover,
   &:focus {
     color: var(--clr-primary-500);
-    text-decoration: none; 
+    text-decoration: none;
   }
 }
 
-p:not([class]),
-ul:not([class]),
-li:not([class]) {
-  max-width: 60ch;
+p {
+  --flow-spacer: 0.5rem;
+  margin-top: var(--flow-spacer, 0rem);
+  text-align: start;
 }
