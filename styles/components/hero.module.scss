@@ -1,91 +1,46 @@
+@use '../abstracts/' as *;
+
 .hero {
+  padding: 0 1.5rem;
   min-height: 100vh;
   min-width: 100vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: start;
+  gap: 1rem;
   background: var(--clr-secondary-900);
   background: linear-gradient(to bottom, var(--clr-secondary-900), var(--clr-secondary-500));
   position: relative;
 
-  .heroWelcome {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    .welcomeTop {
-      animation: h1 4.3s forwards ease-in;
-      opacity: 0;
-    }
-    .welcomeBot {
-      animation: h1span 4.7s 0.2s forwards ease-in;
-      opacity: 0;
-    }
-  }
-
   .heroTxt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
     z-index: 50;
     opacity: 0;
-    animation: heroTxt 1.5s 4.5s forwards ease-in;
+    animation: heroTxt 1.5s 2.5s forwards ease-in;
+    @include mq(large) {
+      align-items: flex-start;
+      text-align: start;
+    }
+
     p {
       color: var(--clr-neutral-150);
       padding-top: 1rem;
       max-width: fit-content;
-      animation: heroTxt 1.5s 4.7s forwards ease-in;
+      animation: heroTxt 1.5s 2.6s forwards ease-in;
     }
     .line {
       width: 0;
       margin-top: 1rem;
       border-bottom: 1px solid var(--clr-accent-300);
-      animation: line 0.5s 6s forwards ease-in;
+      animation: line 0.3s 5s forwards ease-in;
     }
   }
 }
 
-@keyframes h1 {
-  0% {
-    transform: translate(-500%, 0);
-    opacity: 1;
-  }
-
-  40% {
-    transform: translate(0, 0);
-  }
-  80% {
-    transform: scale(1);
-    opacity: 1;
-  }
-  100% {
-    transform: translate(500%, 0);
-    opacity: 0;
-    transform: scale(0);
-  }
-}
-@keyframes h1span {
-  0% {
-    transform: translate(500%, 0);
-    opacity: 1;
-  }
-  40% {
-    transform: translate(0, 0);
-  }
-  80% {
-    transform: scale(1);
-    transform: translate(0, 0);
-    opacity: 1;
-  }
-  95% {
-    transform: scale(0.27) translate(-350%, -1920%);
-    opacity: 0.1;
-  }
-  100% {
-    transform: scale(0.27) translate(-350%, -1920%);
-    opacity: 0;
-  }
-}
 @keyframes heroTxt {
   0% {
     transform: translate(200%, 0);
@@ -106,6 +61,16 @@
     width: 0;
   }
   100% {
-    width: 190px;
+    width: 6rem;
+  }
+}
+@include mq(medium) {
+  @keyframes line {
+    0% {
+      width: 0;
+    }
+    100% {
+      width: 10rem;
+    }
   }
 }
