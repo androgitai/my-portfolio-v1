@@ -1,17 +1,14 @@
 import Link from 'next/link';
-import Image from 'next/image';
 
+import Logo from '../ui/logo';
 import styles from '../../styles/components/layout/main-header.module.scss';
+import Nav from '../nav/nav';
 
 const MainHeader = () => {
   return (
     <header className='container'>
-      <Link href='/'>
-        <a href='/' className={styles.logo}>
-          <Image src={'/logonew.png'} width='479px' height='156px' objectFit='contain' />
-        </a>
-      </Link>
-      <nav className={styles.nav}></nav>
+      <Logo />
+      <Nav />
     </header>
   );
 };
