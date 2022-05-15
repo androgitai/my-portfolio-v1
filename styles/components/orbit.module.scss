@@ -6,7 +6,7 @@
   --size: 10rem;
   --speed: 60s;
   opacity: 0;
-  animation: globeLoad 2s 4s ease-in forwards;
+  animation: globeLoad 2s 3s ease-in forwards;
 
   .globe {
     position: relative;
@@ -34,7 +34,7 @@
     height: var(--size);
     position: absolute;
     top: 22%;
-    left: 28%;
+    left: 25%;
     list-style: none;
     transform-origin: center;
     animation: orbit var(--speed) linear infinite;
@@ -119,13 +119,13 @@
     transform: scale(1.05);
   }
   20% {
-    transform: scale(1.08);
+    transform: scale(1.07);
   }
   40% {
     transform: scale(1.06);
   }
   60% {
-    transform: scale(1.08);
+    transform: scale(1.07);
   }
   80% {
     transform: scale(1.06);
@@ -140,7 +140,7 @@
     opacity: 0;
   }
   100% {
-    transform: scale(0.7);
+    transform: scale(0.6);
     opacity: 1;
   }
 }
@@ -153,6 +153,18 @@
     }
     100% {
       transform: scale(0.9);
+      opacity: 1;
+    }
+  }
+}
+@include mq(large) {
+  @keyframes globeLoad {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    100% {
+      transform: scale(1);
       opacity: 1;
     }
   }
