@@ -1,0 +1,54 @@
+.welcomeTop {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-70%, -90%);
+  animation: h1 3s forwards ease-in;
+  opacity: 0;
+}
+.welcomeBot {
+  position: absolute;
+  z-index: 10;
+  top: 50%;
+  left: 50%;
+  transform: translate(-30%, -10%);
+  animation: h1span 3s 0.2s forwards ease-in;
+  opacity: 0;
+}
+
+@keyframes h1 {
+  0% {
+    transform: translate(-400%, -90%);
+    opacity: 1;
+  }
+
+  20% {
+    transform: translate(-70%, -90%);
+  }
+  80% {
+    transform: translate(-75%, -90%);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(400%, -90%);
+    opacity: 0;
+  }
+}
+@keyframes h1span {
+  0% {
+    transform: translate(400%, -10%);
+    opacity: 1;
+  }
+  20% {
+    transform: translate(-30%, -10%);
+  }
+  80% {
+    transform: translate(-25%, -10%);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-400%, -10%);
+    opacity: 0;
+  }
+}
