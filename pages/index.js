@@ -1,13 +1,15 @@
 import Head from 'next/head';
 import { Fragment } from 'react';
 import Hero from '../components/hero/hero';
+import Welcome from '../components/load/welcome';
 import styles from '../styles/pages/HomePage.module.scss';
 
 const HomePage = () => {
   return (
     <Fragment>
+      <Welcome />
       <Hero />
-      <section id='skills'>
+      <section>
         {/* <div class='quote'>
           <q>
             <span class='text-secondary'>Knowledge</span> is power
