@@ -1,10 +1,11 @@
-import Image from 'next/image';
 import styles from '../../styles/components/hero.module.scss';
-import Orbit from './orbit';
+import Orbit from '../ui/orbit';
+import Welcome from '../load/welcome';
 
 const Hero = () => {
   return (
     <section className={styles.hero}>
+      <Welcome />
       <div className={styles.heroTxt}>
         <h2>
           Hi! I'm <span>Andras Kelemen</span>

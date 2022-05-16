@@ -7,7 +7,7 @@ const Logo = () => {
   return (
     <Link href='/'>
       <a href='/' className={styles.logo}>
-        <Image src={'/logonew.png'} width='479px' height='156px' objectFit='contain' />
+        <Image src={'/logonew.png'} width='700px' height='250px' objectFit='contain' />
       </a>
     </Link>
   );
