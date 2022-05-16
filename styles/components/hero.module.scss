@@ -2,8 +2,10 @@
 
 .hero {
   padding: 0 1.5rem;
+  position: relative;
+  top: 10%;
   min-height: 100vh;
-  min-width: 100vw;
+  min-width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,7 +13,9 @@
   gap: 1rem;
   background: var(--clr-secondary-900);
   background: linear-gradient(to bottom, var(--clr-secondary-900), var(--clr-secondary-500));
-  position: relative;
+  @include mq(medium) {
+    gap: 5rem;
+  }
 
   .heroTxt {
     display: flex;
@@ -27,6 +31,7 @@
     }
 
     p {
+      --flow-spacer: 0.5rem;
       color: var(--clr-neutral-150);
       padding-top: 1rem;
       max-width: fit-content;
