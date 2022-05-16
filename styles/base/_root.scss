@@ -1,8 +1,11 @@
 @use '../abstracts' as *;
 
 :root {
-  --section-spacing: 3rem;
+  --section-spacing: 4rem;
   @include mq(medium) {
+    --section-spacing: 4rem;
+  }
+  @include mq(large) {
     --section-spacing: 5rem;
   }
   @each $color, $shade in $colors {

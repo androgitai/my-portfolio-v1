@@ -6,38 +6,72 @@ body {
 }
 
 section {
-  max-width: 80rem;
-  padding: 0 1rem;
+  margin: 0 auto;
+  max-width: 90rem;
+  padding: 0 2rem;
   @include mq(medium) {
     padding: 0 2rem;
   }
+  @include mq(large) {
+    padding: 0 5rem;
+  }
+  & + section {
+    margin-top: var(--section-spacing);
+  }
+  .spacer {
+    margin: 1rem 0 5rem;
+    height: 1px;
+    max-width: 15%;
+    min-width: 100px;
+    border: 1px solid var(--clr-primary-400);
+    &.center {
+      margin: 1rem auto;
+    }
+  }
 }
 
-main {
-  background: linear-gradient(to bottom right, var(--clr-neutral-100), var(--clr-neutral-200));
-  //   &::after {
-  //     content: '';
-  //     position: fixed;
-  //     top: 0;
-  //     width: 100%;
-  //     height: 100%;
-  //     background: linear-gradient(to right bottom, transparent, var(--clr-secondary-700));
-  //     z-index: -5;
-  //   }
+.quote {
+  text-align: center;
+}
 
-  //   &::before {
-  //     content: '';
-  //     position: absolute;
-  //     top: 0;
-  //     bottom: 0;
-  //     z-index: -10;
-  //     width: 100%;
-  //     height: 100%;
-  //     background: linear-gradient(
-  //       to right bottom,
-  //       var(--clr-secondary-300),
-  //       var(--clr-primary-300),
-  //       var(--clr-accent-300)
-  //     );
-  //   }
+// .section1 {
+//   background: var(--clr-neutral-850);
+//   min-width: 100%;
+//   // margin: 0 2rem;
+// }
+
+main {
+  // background: linear-gradient(to bottom, var(--clr-secondary-300), var(--clr-primary-300));
+
+  &::after {
+    content: '';
+    position: fixed;
+    top: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background: linear-gradient(
+      170deg,
+      var(--clr-neutral-150) 40%,
+      var(--clr-secondary-200) 80%,
+      var(--clr-primary-200)
+    );
+    z-index: -2;
+  }
+
+  // &::before {
+  //   content: '';
+  //   position: fixed;
+  //   top: 0;
+  //   z-index: -1;
+  //   min-width: 100%;
+  //   min-height: 100%;
+  //   background: linear-gradient(
+  //     180deg,
+  //     transparent,
+  //     var(--clr-neutral-600) 20%,
+  //     var(--clr-neutral-600) 80%,
+  //     transparent
+  //   );
+  //   // background: rgba(#fff, $alpha: 0.15);
+  // }
 }
