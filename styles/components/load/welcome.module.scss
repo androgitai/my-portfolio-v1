@@ -52,10 +52,10 @@
     opacity: 1;
   }
   99% {
-    transform: scale(1) translate(-1000%, -10%);
+    transform: translate(-1000%, -10%);
   }
   100% {
-    transform: scale(0) translate(-1000%, -10%);
+    transform: translate(-1000%, -10%);
     opacity: 0;
   }
 }
