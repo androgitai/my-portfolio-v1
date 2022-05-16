@@ -4,8 +4,9 @@
   top: 50%;
   left: 50%;
   transform: translate(-70%, -90%);
-  animation: h1 3s forwards ease-in;
+  animation: welcomeTop 3s forwards ease-in;
   opacity: 0;
+  min-width: fit-content;
 }
 .welcomeBot {
   position: absolute;
@@ -13,11 +14,11 @@
   top: 50%;
   left: 50%;
   transform: translate(-30%, -10%);
-  animation: h1span 3s 0.2s forwards ease-in;
+  animation: welcomeBot 3s 0.2s forwards ease-in;
   opacity: 0;
 }
 
-@keyframes h1 {
+@keyframes welcomeTop {
   0% {
     transform: translate(-400%, -90%);
     opacity: 1;
@@ -30,12 +31,15 @@
     transform: translate(-75%, -90%);
     opacity: 1;
   }
+  99% {
+    transform: scale(1) translate(1000%, -90%);
+  }
   100% {
-    transform: translate(400%, -90%);
+    transform: scale(0) translate(1000%, -90%);
     opacity: 0;
   }
 }
-@keyframes h1span {
+@keyframes welcomeBot {
   0% {
     transform: translate(400%, -10%);
     opacity: 1;
@@ -47,8 +51,11 @@
     transform: translate(-25%, -10%);
     opacity: 1;
   }
+  99% {
+    transform: scale(1) translate(-1000%, -10%);
+  }
   100% {
-    transform: translate(-400%, -10%);
+    transform: scale(0) translate(-1000%, -10%);
     opacity: 0;
   }
 }
