@@ -9,7 +9,6 @@ const HomePage = () => {
     <Fragment>
       <Hero />
       <SectionAbout />
-      <SectionAbout />
       <SectionProjects />
       {/* <section style={{ paddingTop: '100rem' }}></section> */}
     </Fragment>
