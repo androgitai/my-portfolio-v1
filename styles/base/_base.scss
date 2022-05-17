@@ -5,44 +5,7 @@ body {
   min-height: 100vh;
 }
 
-section {
-  margin: 0 auto;
-  max-width: 90rem;
-  padding: 0 2rem;
-  @include mq(medium) {
-    padding: 0 2rem;
-  }
-  @include mq(large) {
-    padding: 0 5rem;
-  }
-  & + section {
-    margin-top: var(--section-spacing);
-  }
-  .spacer {
-    margin: 1rem 0 5rem;
-    height: 1px;
-    max-width: 15%;
-    min-width: 100px;
-    border: 1px solid var(--clr-primary-400);
-    &.center {
-      margin: 1rem auto;
-    }
-  }
-}
-
-.quote {
-  text-align: center;
-}
-
-// .section1 {
-//   background: var(--clr-neutral-850);
-//   min-width: 100%;
-//   // margin: 0 2rem;
-// }
-
 main {
-  // background: linear-gradient(to bottom, var(--clr-secondary-300), var(--clr-primary-300));
-
   &::after {
     content: '';
     position: fixed;
@@ -57,21 +20,76 @@ main {
     );
     z-index: -2;
   }
-
-  // &::before {
-  //   content: '';
-  //   position: fixed;
-  //   top: 0;
-  //   z-index: -1;
-  //   min-width: 100%;
-  //   min-height: 100%;
-  //   background: linear-gradient(
-  //     180deg,
-  //     transparent,
-  //     var(--clr-neutral-600) 20%,
-  //     var(--clr-neutral-600) 80%,
-  //     transparent
-  //   );
-  //   // background: rgba(#fff, $alpha: 0.15);
-  // }
 }
+
+section {
+  margin: 0 auto;
+  max-width: 90rem;
+  padding: var(--section-spacing) 2rem calc(var(--section-spacing) + 1rem);
+  @include mq(large) {
+    padding: var(--section-spacing) 5rem calc(var(--section-spacing) + 6rem);
+  }
+}
+.spacer {
+  margin: 1rem 0 3rem;
+  height: 2px;
+  max-width: 20%;
+  min-width: 100px;
+  border-top: 2px solid;
+  text-align: center;
+  @include mq(large) {
+    margin: 1rem 0 3rem;
+  }
+  @include mq(xlarge) {
+    margin: 1rem 0 5rem;
+  }
+
+  &.center {
+    margin: 1rem auto;
+    max-width: 15%;
+  }
+}
+
+.line {
+  margin: 2rem 0 5rem;
+  height: 2px;
+  max-width: 15%;
+  min-width: 100px;
+  margin: 1rem 0;
+  border-top: 1px solid;
+  &.center {
+    margin: 1rem auto;
+    max-width: 15%;
+  }
+}
+
+.quote {
+  margin: 1rem auto 6rem;
+  @include mq(large) {
+    margin: 2rem auto 6rem;
+  }
+  @include mq(xlarge) {
+    margin: 2rem auto 8rem;
+  }
+}
+
+.quote,
+.quote p {
+  text-align: center;
+  font-size: var(--fs-500);
+  font-style: italic;
+}
+
+.primary {
+  color: var(--clr-primary-400);
+}
+.accent {
+  color: var(--clr-accent-400);
+}
+
+// .primary-border {
+//   border-color: var(--clr-primary-400);
+// }
+// .accent-border {
+//   border-color: var(--clr-accent-400);
+// }

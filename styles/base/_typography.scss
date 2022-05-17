@@ -21,7 +21,6 @@ h3,
 h4 {
   font-weight: normal;
   line-height: 1.2;
-  color: var(--clr-neutral-900);
   span {
     font-family: 'Comfortaa';
     color: var(--clr-primary-400);
@@ -62,28 +61,16 @@ strong {
 }
 
 a {
-  color: var(--clr-primary-400);
-
-  &:hover,
-  &:focus {
-    color: var(--clr-primary-500);
-    text-decoration: none;
-  }
+  text-decoration: none;
 }
 
 p {
   font-size: var(--fs-300);
-  // --flow-spacer: 3.5rem;
+  font-weight: 500;
   margin-top: var(--flow-spacer, 0rem);
-  span {
-    color: var(--clr-primary-400);
-  }
 }
 
 q {
   font-size: var(--fs-500);
   font-style: italic;
-  span {
-    color: var(--clr-primary-400);
-  }
 }
