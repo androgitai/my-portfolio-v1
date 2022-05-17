@@ -5,7 +5,7 @@ $nav-height: 300px;
 $direction: column;
 
 .nav {
-  position: absolute;
+  position: fixed;
   right: 1.5rem;
   top: 10vh;
   z-index: 100;
@@ -17,10 +17,10 @@ $direction: column;
   transform: scale(0);
   box-shadow: 0 0 5px var(--clr-secondary-700);
   transform-origin: top;
-  @include mq(large) {
+  @include mq(xxlarge) {
     animation: nav 1s 2s forwards ease-in;
     top: 35vh;
-    left: 4rem;
+    left: calc(10vw - 5rem);
   }
 
   &Base {
@@ -102,6 +102,9 @@ $direction: column;
     opacity: 0;
     animation: logo 0.2s 2s forwards ease-in;
     @include mq(large) {
+      position: fixed;
+    }
+    @include mq(xxlarge) {
       animation: none;
       display: none;
     }
@@ -121,7 +124,7 @@ $direction: column;
 }
 .closeNav {
   animation: closeNav 0.2s forwards ease-in;
-  @include mq(large) {
+  @include mq(xxlarge) {
     animation: closeNav 1s 2s forwards ease-in;
   }
 }
@@ -163,7 +166,7 @@ $direction: column;
   }
 }
 
-@include mq(large) {
+@include mq(xxlarge) {
   @keyframes closeNav {
     0% {
       transform: translate(-300%, 0);
