@@ -1,0 +1,16 @@
+@use '../../abstracts/' as *;
+
+.wrapper {
+  min-width: 100%;
+  background: linear-gradient(135deg, var(--clr-neutral-700), var(--clr-secondary-800));
+  color: var(--clr-neutral-150);
+}
+
+.featured {
+  h2 {
+    margin-left: 2rem;
+    @include mq(large) {
+      margin-left: 0;
+    }
+  }
+}

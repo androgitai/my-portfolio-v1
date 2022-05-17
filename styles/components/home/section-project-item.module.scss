@@ -1,0 +1,63 @@
+@use '../../abstracts/' as *;
+
+.project {
+  margin-top: 3rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  @include mq(large) {
+    margin-top: 3rem;
+    flex-direction: row;
+    gap: 7rem;
+  }
+
+  &Txt {
+    margin: 1rem;
+    flex: 1;
+    h3 {
+      margin: 0.5rem 0;
+    }
+    h4 {
+      margin: 0.5rem 0 4rem;
+    }
+  }
+
+  &Img {
+    position: relative;
+    flex: 1.3;
+    padding: 0 1rem;
+    transform: rotate(2deg);
+    @include mq(medium) {
+      padding: 0 5rem;
+      flex-direction: row;
+      gap: 7rem;
+    }
+    @include mq(large) {
+      padding: 0;
+      flex-direction: row;
+      gap: 7rem;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      top: -5%;
+      left: -5%;
+      width: 110%;
+      height: 110%;
+      z-index: -5;
+      background: var(--clr-neutral-600);
+      border-radius: 5px;
+      box-shadow: 0 0 30px var(--clr-neutral-300);
+      opacity: 0.2;
+    }
+  }
+}
+
+.reverse {
+  flex-direction: column;
+  @include mq(large) {
+    flex-direction: row-reverse;
+  }
+}
