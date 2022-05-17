@@ -13,6 +13,9 @@ const Nav = () => {
 
   return (
     <Fragment>
+      <div className={styles.navMenu} onClick={navToggleHandler}>
+        <img src='/icons/menu/icons8-circled-menu-32.png' alt='menu' />
+      </div>
       <nav className={navStyle}>
         <div className={styles.navBase}>
           <ul className={styles.navList}>
@@ -39,9 +42,6 @@ const Nav = () => {
           </ul>
         </div>
       </nav>
-      <div className={styles.navMenu} onClick={navToggleHandler}>
-        <img src='/icons/menu/icons8-circled-menu-32.png' alt='menu' />
-      </div>
     </Fragment>
   );
 };

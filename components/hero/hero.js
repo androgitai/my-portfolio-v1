@@ -1,4 +1,4 @@
-import styles from '../../styles/components/hero.module.scss';
+import styles from '../../styles/components/home/hero.module.scss';
 import Orbit from '../ui/orbit';
 import Welcome from '../load/welcome';
 

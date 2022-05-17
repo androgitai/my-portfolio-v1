@@ -17,28 +17,28 @@ const Orbit = () => {
       </div>
       <ul>
         <li>
-          <img src='/icons/css3.svg' alt='' />
+          <img src='/icons/tech/css3.svg' alt='css3' />
         </li>
         <li>
-          <img src='/icons/html5.svg' alt='' />
+          <img src='/icons/tech/html5.svg' alt='html5' />
         </li>
         <li>
-          <img src='/icons/javascript.svg' alt='' />
+          <img src='/icons/tech/javascript.svg' alt='js' />
         </li>
         <li>
-          <img src='/icons/nextjs.svg' alt='' />
+          <img src='/icons/tech/nextjs.svg' alt='next.js' />
         </li>
         <li>
-          <img src='/icons/react-icon.svg' alt='' />
+          <img src='/icons/tech/react-icon.svg' alt='react.js' />
         </li>
         <li>
-          <img src='/icons/sass.svg' alt='' />
+          <img src='/icons/tech/sass.svg' alt='sass' />
         </li>
         <li>
-          <img src='/icons/jest.svg' alt='' />
+          <img src='/icons/tech/jest.svg' alt='jest' />
         </li>
         <li>
-          <img src='/icons/nodejs.svg' alt='' />
+          <img src='/icons/tech/nodejs.svg' alt='node.js' />
         </li>
       </ul>
     </div>
