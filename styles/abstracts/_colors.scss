@@ -14,6 +14,10 @@ $colors: (
     300: $primary-base 90% 70%,
     400: $primary-base 90% 60%,
     500: $primary-base 90% 50%,
+    600: $primary-base 90% 40%,
+    700: $primary-base 90% 30%,
+    800: $primary-base 90% 20%,
+    900: $primary-base 90% 10%,
   ),
   secondary: (
     100: $secondary-base 89% 90%,
@@ -31,6 +35,9 @@ $colors: (
     300: $accent-base 100% 70%,
     400: $accent-base 100% 50%,
     500: $accent-base 100% 30%,
+    600: $accent-base 100% 20%,
+    700: $accent-base 100% 15%,
+    800: $accent-base 100% 10%,
   ),
   neutral: (
     100: $neutral-base 0% 100%,
