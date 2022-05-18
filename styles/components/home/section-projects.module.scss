@@ -2,15 +2,15 @@
 
 .wrapper {
   min-width: 100%;
-  background: linear-gradient(135deg, var(--clr-neutral-700), var(--clr-secondary-800));
+  background: linear-gradient(135deg, var(--clr-neutral-800) 70%, var(--clr-accent-500));
   color: var(--clr-neutral-150);
 }
 
 .featured {
   h2 {
-    margin-left: 2rem;
+    text-align: center;
     @include mq(large) {
-      margin-left: 0;
+      text-align: start;
     }
   }
 }

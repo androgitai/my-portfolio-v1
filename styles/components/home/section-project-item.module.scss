@@ -1,32 +1,39 @@
 @use '../../abstracts/' as *;
 
 .project {
-  margin-top: 3rem;
+  margin-top: 5rem;
+  margin-bottom: 10rem;
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 2rem;
+  gap: 8rem;
   @include mq(large) {
-    margin-top: 3rem;
+    margin-top: 8rem;
+    margin-bottom: 10rem;
     flex-direction: row;
-    gap: 7rem;
+    gap: 8rem;
   }
 
   &Txt {
-    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     flex: 1;
     h3 {
       margin: 0.5rem 0;
     }
     h4 {
-      margin: 0.5rem 0 4rem;
+      margin: 0.5rem 0 3rem;
+    }
+    button {
+      margin-top: 3rem;
     }
   }
 
   &Img {
     position: relative;
-    flex: 1.3;
+    flex: 1;
     padding: 0 1rem;
     transform: rotate(2deg);
     @include mq(medium) {
@@ -42,15 +49,25 @@
     &::after {
       content: '';
       position: absolute;
-      top: -5%;
+      top: -12%;
       left: -5%;
-      width: 110%;
-      height: 110%;
+      width: 95%;
+      height: 105%;
       z-index: -5;
-      background: var(--clr-neutral-600);
+      background: var(--clr-neutral-900);
+      filter: blur(5px);
       border-radius: 5px;
-      box-shadow: 0 0 30px var(--clr-neutral-300);
-      opacity: 0.2;
+      opacity: 0.25;
+      @include mq(medium) {
+        top: -15%;
+        left: 5%;
+        width: 75%;
+      }
+      @include mq(large) {
+        top: -12%;
+        left: -8%;
+        width: 105%;
+      }
     }
   }
 }
@@ -60,4 +77,9 @@
   @include mq(large) {
     flex-direction: row-reverse;
   }
+}
+
+.control {
+  display: flex;
+  gap: 0.5rem;
 }

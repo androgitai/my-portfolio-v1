@@ -16,6 +16,12 @@
   @include mq(medium) {
     gap: 5rem;
   }
+  @include mq(xlarge) {
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 5vw;
+    gap: 0;
+  }
 
   .heroTxt {
     display: flex;
@@ -27,7 +33,6 @@
     animation: heroTxt 1.5s 2.5s forwards ease-in;
     @include mq(large) {
       align-items: flex-start;
-      text-align: start;
     }
 
     p {
@@ -61,6 +66,23 @@
     opacity: 1;
   }
 }
+// @include mq(xlarge) {
+//   @keyframes heroTxt {
+//     0% {
+//       transform: translate(200%, 0);
+//     }
+//     78% {
+//       transform: translate(-10%, 0);
+//     }
+//     85% {
+//       transform: translate(2%, 0);
+//     }
+//     100% {
+//       transform: translate(-30%, 0);
+//       opacity: 1;
+//     }
+//   }
+// }
 @keyframes line {
   0% {
     width: 0;
