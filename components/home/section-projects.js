@@ -1,14 +1,11 @@
 import { Fragment } from 'react';
-import Image from 'next/image';
-import Link from 'next/link';
 import styles from '../../styles/components/home/section-projects.module.scss';
-import Button from '../ui/button';
 import SectionProjectItem from './section-project-item';
 
 const projectsData = [
   {
     id: 1,
-    title: 'Invoice Me',
+    title: 'InvoiceMe',
     subTitle: 'Web application for invoicing.',
     paragraph1:
       'Self developed production app where you can manage your invoices with ease in a safe manner.',
@@ -44,7 +41,7 @@ const SectionProjects = () => {
             <div className='spacer center accent'></div>
           </div>
           <h2>
-            Featured Projects <div className='spacer accent'></div>
+            Featured Projects <div className='spacer fluid accent'></div>
           </h2>
 
           {projectsData.map(item => (
