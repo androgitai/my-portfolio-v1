@@ -2,6 +2,7 @@ import Head from 'next/head';
 import { Fragment } from 'react';
 import Hero from '../components/hero/hero';
 import SectionAbout from '../components/home/section-about';
+import SectionContact from '../components/home/section-contact';
 import SectionProjects from '../components/home/section-projects';
 
 const HomePage = () => {
@@ -10,7 +11,7 @@ const HomePage = () => {
       <Hero />
       <SectionAbout />
       <SectionProjects />
-      {/* <section style={{ paddingTop: '100rem' }}></section> */}
+      <SectionContact />
     </Fragment>
   );
 };
