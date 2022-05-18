@@ -7,9 +7,9 @@ const Hero = () => {
     <section className={styles.hero}>
       <Welcome />
       <div className={styles.heroTxt}>
-        <h2>
+        <h1>
           Hi! I'm <span>Andras Kelemen</span>
-        </h2>
+        </h1>
         <div className={styles.line}></div>
         <p>Web Developer &#38; Entrepreneur</p>
       </div>
