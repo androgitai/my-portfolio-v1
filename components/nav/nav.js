@@ -1,6 +1,7 @@
 import { Fragment, useState } from 'react';
 import Link from 'next/link';
 import styles from '../../styles/components/nav/nav.module.scss';
+import Social from './social';
 
 const Nav = () => {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -13,6 +14,7 @@ const Nav = () => {
 
   return (
     <Fragment>
+      <Social />
       <div className={styles.navMenu} onClick={navToggleHandler}>
         <img src='/icons/menu/icons8-circled-menu-32.png' alt='menu' />
       </div>
