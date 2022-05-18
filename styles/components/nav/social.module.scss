@@ -1,0 +1,33 @@
+@use '../../abstracts/' as *;
+
+.social {
+  position: fixed;
+  z-index: 50;
+  bottom: 22vh;
+  left: max(1rem, calc(10vw - 8rem));
+  display: none;
+  @include mq(large) {
+    display: block;
+  }
+  @include mq(xxlarge) {
+    left: unset;
+    right: max(1rem, calc(10vw - 8rem));
+  }
+}
+
+.icons {
+  padding: 0.3rem 0.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  border-radius: 2rem;
+  background: transparent;
+
+  img {
+    max-width: 2.5rem;
+    border-radius: 50%;
+    padding: 0.1rem;
+    background-color: var(--clr-secondary-800);
+    box-shadow: 0 0 4px var(--clr-secondary-700);
+  }
+}
