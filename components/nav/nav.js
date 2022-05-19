@@ -14,7 +14,7 @@ const Nav = () => {
 
   return (
     <Fragment>
-      <Social />
+      <Social place='nav' />
       <div className={styles.navMenu} onClick={navToggleHandler}>
         <img src='/icons/menu/icons8-circled-menu-32.png' alt='menu' />
       </div>
