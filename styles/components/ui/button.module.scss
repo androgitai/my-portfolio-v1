@@ -15,10 +15,10 @@
 .secondary {
   border: 1px solid var(--clr-secondary-400);
   background: transparent;
-  color: var(--clr-neutral-150);
+  color: var(--clr-neutral-900);
 
   & * {
-    color: var(--clr-neutral-150);
+    color: var(--clr-neutral-900);
     transition: all 250ms ease-in;
   }
   &:hover {
@@ -42,6 +42,23 @@
   }
   &:hover {
     background: var(--clr-accent-500);
+    color: var(--clr-neutral-150);
+    & * {
+      color: var(--clr-neutral-150);
+    }
+  }
+}
+.primary {
+  border: 1px solid var(--clr-primary-400);
+  background: transparent;
+  color: var(--clr-neutral-150);
+
+  & * {
+    color: var(--clr-neutral-150);
+    transition: all 250ms ease-in;
+  }
+  &:hover {
+    background: var(--clr-primary-500);
     color: var(--clr-neutral-150);
     & * {
       color: var(--clr-neutral-150);
