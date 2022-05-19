@@ -1,0 +1,86 @@
+export const projectsData = [
+  {
+    id: 1,
+    title: 'InvoiceMe',
+    subTitle: 'Web application for invoicing.',
+    paragraph1:
+      'Self developed production app where you can manage your invoices with ease in a safe manner.',
+    paragraph2:
+      'Uses React, Redux, CSS modules and FireBase for backend database and authentication.',
+    image: '/projects/invoiceMe/MainPic.jpg',
+    reverse: false,
+    liveSite: 'https://invoice-me-app.netlify.app',
+    gitHub: 'https://github.com/androgitai/invoice-app',
+  },
+  {
+    id: 2,
+    title: 'REST Countries',
+    subTitle: 'Find detials about any country around the world.',
+    paragraph1:
+      'Self developed production app where you can search countries with flags, open and see detials about them.',
+    paragraph2:
+      'Uses Html5, Sass and JavaScript. Built to MVC architecture and uses REST countries API.',
+    image: '/projects/rest-countries/rest-countries.jpg',
+    reverse: true,
+    liveSite: 'https://andro-rest-countries.netlify.app',
+    gitHub: 'https://github.com/androgitai/REST_Countries',
+  },
+  {
+    id: 3,
+    title: 'Forkify',
+    subTitle: 'Serach, save and create recipes',
+    paragraph1:
+      'Recipe database app where you can search for recipies using a recipe database API. You can bookmark it or add you own recipe.',
+    paragraph2:
+      'Uses Html5, Sass and JavaScript and built to MVC architecture. This was my first bigger JS project.',
+    image: '/projects/forkify/forkify.jpg',
+    reverse: false,
+    liveSite: 'https://forkify-andro.netlify.app',
+    gitHub: 'https://github.com/androgitai/forkify',
+  },
+  {
+    id: 4,
+    title: 'ROOM',
+    subTitle: 'Furniture company landing page',
+    paragraph1: 'Interactive landing page. Created from Frontend Mentor design material.',
+    paragraph2: 'Uses Html5, CSS and JavaScript.',
+    image: '/projects/room/room.jpg',
+    reverse: true,
+    liveSite: 'https://room-homepage-andro.netlify.app/',
+    gitHub: 'https://github.com/androgitai/RoomHomePage',
+  },
+  {
+    id: 5,
+    title: 'Time Tracker',
+    subTitle: 'Track you activities',
+    paragraph1: 'Small interactive dashboard page. Created from Frontend Mentor design material.',
+    paragraph2: 'Uses Html5, Sass and JavaScript.',
+    image: '/projects/time-tracker/time-tracker.jpg',
+    reverse: false,
+    liveSite: 'https://time-dashboard.netlify.app/',
+    gitHub: 'https://github.com/androgitai/TimeTrackingDashboard',
+  },
+  {
+    id: 6,
+    title: 'Pig Game',
+    subTitle: 'Small dice game',
+    paragraph1: 'Small dice game where you have gamble your risks to win.',
+    paragraph2: 'Uses Html5, CSS and JavaScript.',
+    image: '/projects/pig-game/pig-game.jpg',
+    reverse: true,
+    liveSite: 'https://pig-game-andro.netlify.app/',
+    gitHub: 'https://github.com/androgitai/PigGame',
+  },
+];
+// {
+//     id: 6,
+//     title: 'Burger Builder',
+//     subTitle: 'Build and order you burger',
+//     paragraph1:
+//       'My first React app where you can build your burger with a retro visulas,go to checkout and order it.',
+//     paragraph2: 'Uses React and CSS',
+//     image: '/projects/burger-builder/burger-builder.jpg',
+//     reverse: false,
+//     liveSite: 'https://burger-builder-andro.netlify.app/',
+//     gitHub: 'https://github.com/androgitai/BurgerBuilder',
+//   },
