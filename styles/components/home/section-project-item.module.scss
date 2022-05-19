@@ -31,7 +31,7 @@
     }
   }
 
-  &Img {
+  .projectImg {
     position: relative;
     flex: 1;
     padding: 0 1rem;
@@ -72,6 +72,11 @@
   }
 }
 
+.control {
+  display: flex;
+  gap: 0.5rem;
+}
+
 .reverse {
   flex-direction: column;
   @include mq(large) {
@@ -79,7 +84,13 @@
   }
 }
 
-.control {
+.small {
+  gap: 3rem;
   display: flex;
-  gap: 0.5rem;
+  flex-direction: column;
+  margin-top: 3rem;
+}
+
+.reverseSmall {
+  // flex-direction: column-reverse;
 }

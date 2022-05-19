@@ -1,8 +1,8 @@
 .footer {
   min-width: 100%;
-  background: var(--clr-neutral-900);
-  color: var(--clr-neutral-150);
-  padding: 4rem;
+  background: linear-gradient(0deg, var(--clr-neutral-900), var(--clr-neutral-850));
+  color: var(--clr-neutral-400);
+  padding: 2rem;
   text-align: center;
 
   p {
@@ -14,6 +14,9 @@
     justify-content: center;
   }
   img {
-    width: 40px;
+    max-width: 2.5rem;
+    border-radius: 50%;
+    padding: 0.1rem;
+    background: var(--clr-secondary-700);
   }
 }
