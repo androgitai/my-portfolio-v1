@@ -1,7 +1,13 @@
 import React from 'react';
+import { Fragment } from 'react';
+import Contact from '../components/conatct/contact';
 
 const ContactPage = () => {
-  return <div>ContactPage</div>;
+  return (
+    <Fragment>
+      <Contact />
+    </Fragment>
+  );
 };
 
 export default ContactPage;
