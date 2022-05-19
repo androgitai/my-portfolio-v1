@@ -1,0 +1,20 @@
+.wrapper {
+  min-width: 100%;
+  background: linear-gradient(135deg, var(--clr-secondary-700), var(--clr-secondary-800));
+  color: var(--clr-neutral-150);
+}
+
+.contact {
+  min-height: 100vh;
+  padding: max(5rem, 10vh) clamp(2rem, 10vw, 15rem) 3rem;
+
+  form {
+    margin: 5rem auto;
+    background: linear-gradient(45deg, transparent, var(--clr-secondary-800) 15% 85%, transparent);
+
+    h4,
+    button {
+      color: var(--clr-neutral-150);
+    }
+  }
+}
