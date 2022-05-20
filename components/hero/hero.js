@@ -14,6 +14,9 @@ const Hero = () => {
         <p>Web Developer &#38; Entrepreneur</p>
       </div>
       <Orbit />
+      {/* <div className={styles.arrow}>
+        <img src='/icons/menu/down2.png' alt='chevron' />
+      </div> */}
     </section>
   );
 };
