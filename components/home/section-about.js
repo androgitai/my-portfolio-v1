@@ -1,20 +1,41 @@
 import { Fragment } from 'react';
 import styles from '../../styles/components/home/section-about.module.scss';
+import { useInView } from 'react-intersection-observer';
 
 const SectionAbout = () => {
+  const { ref: quoteRef, inView: quoteInView } = useInView({
+    threshold: 0.15,
+    triggerOnce: true,
+  });
+  const { ref: aboutRef, inView: aboutInView } = useInView({
+    threshold: 0.15,
+    triggerOnce: true,
+  });
+  const { ref: infoRef, inView: infoInView } = useInView({
+    threshold: 0.15,
+    triggerOnce: true,
+  });
+  const { ref: aimRef, inView: aimInView } = useInView({
+    threshold: 0.15,
+    triggerOnce: true,
+  });
+
   return (
     <Fragment>
       <section className={styles.about}>
-        <div className='quote'>
+        <div className={quoteInView ? 'quote floatFromBot' : 'quote hidden'} ref={quoteRef}>
           <q>
             <span className='primary'>Knowledge</span> is power
           </q>
+          <small>~ Francis Bacon</small>
           <div className='spacer center primary'></div>
         </div>
-        <h3>A little bit about me..</h3>
-        <div className='spacer primary'></div>
-        <div className={styles.info}>
-          <p>
+        <div className={aboutInView ? 'floatFromBot' : 'hidden'} ref={aboutRef}>
+          <h3>A little bit about me..</h3>
+          <div className='spacer primary'></div>
+        </div>
+        <div className={styles.info} ref={infoRef}>
+          <p className={infoInView ? 'slideInLeft' : 'hidden'}>
             A never ending passion for computers, technology, maths and science. Programming
             combines all of them together so I can create beautiful, performant and cutting edge web
             applications as a web developer today. My main focus is JavaScript based technologies,
@@ -22,14 +43,14 @@ const SectionAbout = () => {
             different languages and frameworks to be dived into. <br />
             <br /> Let's the make the web alive!
           </p>
-          <div className={styles.icons}>
+          <div className={`${styles.icons} ${infoInView ? 'slideInRight' : 'hidden'}`}>
             <img src='/icons/tech/javascript.svg' alt='js' />
             <img src='/icons/tech/nextjs.svg' alt='next.js' />
             <img src='/icons/tech/react-icon.svg' alt='react.js' />
             <img src='/icons/tech/nodejs.svg' alt='node.js' />
           </div>
         </div>
-        <div className={styles.tech}>
+        <div className={`${styles.tech} ${aimInView ? 'floatFromBot' : 'hidden'} `} ref={aimRef}>
           <h3>My aim for my projects..</h3>
           <div className='spacer primary'></div>
           <div className={styles.techGrid}>
