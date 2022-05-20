@@ -1,0 +1,58 @@
+@mixin animate($name, $speed, $delay) {
+  animation: $name $speed $delay ease-in forwards;
+}
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(50%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes floatFromTop {
+  0% {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes floatFromBot {
+  0% {
+    transform: translateY(20%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.slideInLeft {
+  @include animate(slideInLeft, 0.8s, 0s);
+}
+.slideInRight {
+  @include animate(slideInRight, 0.8s, 0s);
+}
+.floatFromTop {
+  @include animate(floatFromTop, 0.8s, 0s);
+}
+.floatFromBot {
+  @include animate(floatFromBot, 0.8s, 0s);
+}
