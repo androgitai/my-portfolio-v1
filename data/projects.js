@@ -63,7 +63,7 @@ export const projectsData = [
   {
     id: 6,
     title: 'Pig Game',
-    subTitle: 'Small dice game',
+    subTitle: 'Dice game',
     paragraph1: 'Small dice game where you have gamble your risks to win.',
     paragraph2: 'Uses Html5, CSS and JavaScript.',
     image: '/projects/pig-game/pig-game.jpg',
