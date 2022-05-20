@@ -16,7 +16,9 @@ const ProjectsBody = () => {
       <div className={styles.control}>
         <h3>Contact me and let's start your project today!</h3>
         <Link href='/contact'>
-          <Button btnStyle='primary'>Let's go &#8811;</Button>
+          <a>
+            <Button btnStyle='primary'>Let's go &#8811;</Button>
+          </a>
         </Link>
       </div>
     </div>
