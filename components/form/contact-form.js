@@ -1,14 +1,25 @@
 import React from 'react';
+import { useInView } from 'react-intersection-observer';
+
 import styles from '../../styles/components/form/contact-form.module.scss';
 import Button from '../ui/button';
 
 const ContactForm = () => {
+  const { ref: formRef, inView: formInView } = useInView({
+    threshold: 0.3,
+    triggerOnce: true,
+  });
+
   const formSubmitHandler = event => {
     event.preventDefault();
   };
 
   return (
-    <form className={styles.contactForm} onSubmit={formSubmitHandler}>
+    <form
+      className={formInView ? `${styles.contactForm} floatFromBot` : 'hidden'}
+      onSubmit={formSubmitHandler}
+      ref={formRef}
+    >
       <fieldset>
         <label htmlFor='name'>
           <h4>Name</h4>
