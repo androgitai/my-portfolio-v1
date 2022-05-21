@@ -1,17 +1,18 @@
 @use '../../abstracts/' as *;
+@use '../../utilities/animations' as *;
 
 .nav {
   position: fixed;
   z-index: 50;
-  bottom: 22vh;
-  left: max(1rem, calc(10vw - 8rem));
   display: none;
-  @include mq(large) {
+  @include mq(medium) {
     display: block;
+    left: 0;
+    top: 60vh;
   }
-  @include mq(xxlarge) {
-    left: unset;
+  @include mq(large) {
     right: max(1rem, calc(10vw - 8rem));
+    left: unset;
   }
   .icons {
     padding: 0.3rem 0.2rem;
