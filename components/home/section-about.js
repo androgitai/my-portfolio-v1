@@ -4,19 +4,19 @@ import { useInView } from 'react-intersection-observer';
 
 const SectionAbout = () => {
   const { ref: quoteRef, inView: quoteInView } = useInView({
-    threshold: 0.15,
+    threshold: 0.3,
     triggerOnce: true,
   });
   const { ref: aboutRef, inView: aboutInView } = useInView({
-    threshold: 0.15,
+    threshold: 0.3,
     triggerOnce: true,
   });
   const { ref: infoRef, inView: infoInView } = useInView({
-    threshold: 0.15,
+    threshold: 0.3,
     triggerOnce: true,
   });
   const { ref: aimRef, inView: aimInView } = useInView({
-    threshold: 0.15,
+    threshold: 0.3,
     triggerOnce: true,
   });
 
