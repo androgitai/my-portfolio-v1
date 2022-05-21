@@ -1,26 +1,69 @@
 import Image from 'next/image';
+import { useInView } from 'react-intersection-observer';
+
 import styles from '../../styles/components/home/section-project-item.module.scss';
 import Button from '../ui/button';
 
 const SectionProjectItem = props => {
-  const projectStyle = props.small
-    ? props.project.reverse
-      ? `${styles.small} ${styles.reverseSmall}`
-      : `${styles.small}`
-    : props.project.reverse
-    ? `${styles.project} ${styles.reverse}`
-    : `${styles.project}`;
+  const { title, subTitle, paragraph1, paragraph2, image, image2, liveSite, gitHub, reverse } =
+    props.project;
 
-  const { title, subTitle, paragraph1, paragraph2, image, liveSite, gitHub } = props.project;
+  const { ref: projectTextRef, inView: projectTextInView } = useInView({
+    threshold: 0.1,
+    triggerOnce: true,
+  });
+  const { ref: image1Ref, inView: image1InView } = useInView({
+    threshold: 0.3,
+    triggerOnce: true,
+  });
+  const { ref: image2Ref, inView: image2InView } = useInView({
+    threshold: 0.4,
+    triggerOnce: true,
+  });
+
+  let projectStyle = `${styles.small}`;
+
+  if (!props.small) {
+    projectStyle = reverse ? `${styles.project} ${styles.reverse} ` : `${styles.project}`;
+  }
 
   return (
     <div className={projectStyle}>
-      <div className={styles.projectImg}>
-        <a href={liveSite} target='_blank'>
-          <Image src={image} width='1400px' height='1000px' objectFit='cover' />
-        </a>
+      <div className={`${styles.projectImages}`}>
+        <div
+          className={
+            image1InView ? `${styles.image} ${reverse ? 'slideInRight' : 'slideInLeft'}` : 'hidden'
+          }
+          ref={image1Ref}
+        >
+          <a href={liveSite} target='_blank'>
+            <Image src={image} width='1400px' height='1000px' objectFit='cover' />
+          </a>
+        </div>
+        {!props.small && (
+          <div
+            className={
+              image2InView
+                ? `${styles.image} ${reverse ? 'slideInRight' : 'slideInLeft'}`
+                : 'hidden'
+            }
+            ref={image2Ref}
+          >
+            <a href={liveSite} target='_blank'>
+              <Image src={image2} width='1400px' height='1000px' objectFit='cover' />
+            </a>
+          </div>
+        )}
       </div>
-      <div className={styles.projectTxt}>
+      <div className={`line largeNoDisplay ${props.small ? 'none' : 'accent'}`}></div>
+      <div
+        className={
+          projectTextInView
+            ? `${styles.projectTxt} ${reverse ? 'slideInLeft' : 'slideInRight'}`
+            : 'hidden'
+        }
+        ref={projectTextRef}
+      >
         <h3>
           {title}
           <div className={`line ${props.style}`}></div>
