@@ -7,7 +7,9 @@ export const projectsData = [
       'Self developed production app where you can manage your invoices with ease in a safe manner.',
     paragraph2:
       'Uses React, Redux, CSS modules and FireBase for backend database and authentication.',
-    image: '/projects/invoiceMe/MainPic.jpg',
+    image: '/projects/invoiceMe/MainPicDark.jpg',
+    image2: '/projects/invoiceMe/EditInvoiceDark.jpg',
+    image3: '/projects/invoiceMe/InvoiceDetails.jpg',
     reverse: false,
     liveSite: 'https://invoice-me-app.netlify.app',
     gitHub: 'https://github.com/androgitai/invoice-app',
@@ -20,7 +22,9 @@ export const projectsData = [
       'Self developed production app where you can search countries with flags, open and see detials about them.',
     paragraph2:
       'Uses Html5, Sass and JavaScript. Built to MVC architecture and uses REST countries API.',
-    image: '/projects/rest-countries/rest-countries.jpg',
+    image: '/projects/rest-countries/rest-countries-dark.jpg',
+    image2: '/projects/rest-countries/rest-countries-details-dark.jpg',
+    image3: '/projects/rest-countries/rest-countries-details-dark.jpg',
     reverse: true,
     liveSite: 'https://andro-rest-countries.netlify.app',
     gitHub: 'https://github.com/androgitai/REST_Countries',
