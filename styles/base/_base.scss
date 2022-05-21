@@ -27,10 +27,13 @@ section {
   max-width: 90rem;
   padding: var(--section-spacing) 1rem calc(var(--section-spacing) + 1rem);
   @include mq(medium) {
-    padding: var(--section-spacing) 2rem calc(var(--section-spacing));
+    padding: var(--section-spacing) 4rem calc(var(--section-spacing));
   }
   @include mq(large) {
-    padding: var(--section-spacing) 5rem calc(var(--section-spacing));
+    padding: var(--section-spacing) 6rem calc(var(--section-spacing));
+  }
+  @include mq(xxlarge) {
+    padding: var(--section-spacing) 3rem calc(var(--section-spacing));
   }
 }
 .spacer {
@@ -71,6 +74,11 @@ section {
     margin: 1rem auto;
     max-width: 15%;
   }
+  @include mq(large) {
+    &.largeNoDisplay {
+      display: none;
+    }
+  }
 }
 
 .quote {
@@ -102,6 +110,9 @@ section {
 
 .hidden {
   opacity: 0;
+}
+.none {
+  display: none;
 }
 // .primary-border {
 //   border-color: var(--clr-primary-400);
