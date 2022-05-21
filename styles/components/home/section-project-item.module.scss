@@ -1,25 +1,24 @@
 @use '../../abstracts/' as *;
 
 .project {
-  margin-top: 5rem;
-  margin-bottom: 10rem;
+  margin: 6rem 0 10rem;
   position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 8rem;
+  display: grid;
+  grid-template-areas:
+    'a'
+    'b';
   @include mq(large) {
-    margin-top: 8rem;
-    margin-bottom: 10rem;
-    flex-direction: row;
+    grid-template-areas: 'a b';
+    grid-template-columns: repeat(2, 1fr);
     gap: 8rem;
   }
 
-  &Txt {
+  .projectTxt {
+    grid-area: b;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    flex: 1;
+    margin: 0;
     h3 {
       margin: 0.5rem 0;
     }
@@ -27,46 +26,37 @@
       margin: 0.5rem 0 3rem;
     }
     button {
-      margin-top: 3rem;
+      margin: 3rem 0 1rem;
+    }
+    @include mq(large) {
+      height: max(25rem, 40%);
+      position: sticky;
+      top: 40%;
+    }
+    @include mq(xlarge) {
+      height: 40%;
     }
   }
 
-  .projectImg {
+  .projectImages {
+    .image:nth-child(2) {
+      display: none;
+    }
+    grid-area: a;
     position: relative;
-    flex: 1;
-    padding: 0 1rem;
-    transform: rotate(2deg);
+    padding: 0 1rem 2rem;
+    overflow: hidden;
     @include mq(medium) {
-      padding: 0 5rem;
-      flex-direction: row;
-      gap: 7rem;
+      padding: 0 3rem 2rem;
     }
     @include mq(large) {
       padding: 0;
-      flex-direction: row;
       gap: 7rem;
-    }
-    &::after {
-      content: '';
-      position: absolute;
-      top: -12%;
-      left: -5%;
-      width: 95%;
-      height: 105%;
-      z-index: -5;
-      background: var(--clr-neutral-900);
-      filter: blur(5px);
-      border-radius: 5px;
-      opacity: 0.25;
-      @include mq(medium) {
-        top: -15%;
-        left: 5%;
-        width: 75%;
-      }
-      @include mq(large) {
-        top: -12%;
-        left: -8%;
-        width: 105%;
+      .image {
+        &:nth-child(2) {
+          display: block;
+        }
+        margin-bottom: 5rem;
       }
     }
   }
@@ -78,9 +68,9 @@
 }
 
 .reverse {
-  flex-direction: column;
+  grid-template-areas: 'a' 'b';
   @include mq(large) {
-    flex-direction: row-reverse;
+    grid-template-areas: 'b a';
   }
 }
 
@@ -89,8 +79,21 @@
   display: flex;
   flex-direction: column;
   margin-top: 3rem;
-}
-
-.reverseSmall {
-  // flex-direction: column-reverse;
+  & .projectImages:hover {
+    transition: all 250ms ease-in;
+    box-shadow: 0 0 15px var(--clr-primary-400);
+  }
+  .projectTxt {
+    display: flex;
+    flex-direction: column;
+    h3 {
+      margin: 0.5rem 0;
+    }
+    h4 {
+      margin: 0.5rem 0 3rem;
+    }
+    button {
+      margin-top: 3rem;
+    }
+  }
 }
