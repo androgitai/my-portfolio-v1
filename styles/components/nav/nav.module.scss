@@ -17,10 +17,15 @@ $direction: column;
   transform: scale(0);
   box-shadow: 0 0 5px var(--clr-secondary-700);
   transform-origin: top;
-  @include mq(xxlarge) {
+  @include mq(large) {
     animation: nav 1s 2s forwards ease-in;
     top: 35vh;
-    left: calc(10vw - 5rem);
+    right: unset;
+    left: 1rem;
+  }
+  @include mq(xxlarge) {
+    // left: max(3rem, 3vw);
+    left: clamp(3rem, 3vw, 20vw);
   }
 
   &Base {
@@ -102,11 +107,10 @@ $direction: column;
     opacity: 0;
     animation: logo 0.2s 2s forwards ease-in;
     @include mq(large) {
-      position: fixed;
-    }
-    @include mq(xxlarge) {
       animation: none;
       display: none;
+    }
+    @include mq(xxlarge) {
     }
 
     &:hover,
@@ -124,7 +128,7 @@ $direction: column;
 }
 .closeNav {
   animation: closeNav 0.2s forwards ease-in;
-  @include mq(xxlarge) {
+  @include mq(large) {
     animation: closeNav 1s 2s forwards ease-in;
   }
 }
@@ -166,14 +170,14 @@ $direction: column;
   }
 }
 
-@include mq(xxlarge) {
+@include mq(large) {
   @keyframes closeNav {
     0% {
       transform: translate(-300%, 0);
       opacity: 0;
     }
     100% {
-      transform: translate(-50%, 0);
+      transform: translate(0, 0);
       opacity: 1;
     }
   }
