@@ -27,11 +27,12 @@
 }
 
 .control {
-  padding: 0 0 5rem;
+  padding: 0 0.5rem 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+  text-align: center;
 
   h3 {
     color: var(--clr-neutral-150);
