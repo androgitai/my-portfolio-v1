@@ -43,20 +43,30 @@
     opacity: 1;
   }
 }
-@keyframes fadeOut {
+
+@keyframes fadeInOut {
   0% {
-    opacity: 0.3;
+    opacity: 0.7;
+  }
+  50% {
+    opacity: 0.4;
   }
   100% {
-    opacity: 0;
+    opacity: 0.7;
   }
 }
-@keyframes fadeIn {
+
+@keyframes floatRotateBot {
   0% {
+    transform: rotate(0deg);
     opacity: 0;
   }
+  50% {
+    transform: rotate(90deg) translateY(200%);
+  }
   100% {
-    opacity: 1;
+    transform: rotate(90deg) translateY(0);
+    opacity: 0.7;
   }
 }
 
@@ -72,6 +82,7 @@
 .floatFromBot {
   @include animate(floatFromBot, 0.6s, 0s);
 }
-.fadeIn {
-  @include animate(fadeIn, 0.3s, 0s);
+
+@mixin scrollSign {
+  animation: floatRotateBot 3s 4s forwards, fadeInOut 3s 7s infinite;
 }
