@@ -1,7 +1,11 @@
-import React from 'react';
+import { Fragment } from 'react';
+import About from '../components/about/about';
 
 const AboutPage = () => {
-  return <div>AboutPage</div>;
+  return (
+    <Fragment>
+      <About />
+    </Fragment>
+  );
 };
-
 export default AboutPage;
