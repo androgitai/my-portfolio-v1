@@ -35,7 +35,7 @@ const SectionProjects = () => {
           <div className={styles.control}>
             <Link href='/projects'>
               <a>
-                <Button btnStyle='accent'>See all Projects &#8811;</Button>
+                <Button btnStyle='accent'>See more Projects &#8811;</Button>
               </a>
             </Link>
           </div>
