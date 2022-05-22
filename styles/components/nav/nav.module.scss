@@ -24,7 +24,6 @@ $direction: column;
     left: 1rem;
   }
   @include mq(xxlarge) {
-    // left: max(3rem, 3vw);
     left: clamp(3rem, 3vw, 20vw);
   }
 
