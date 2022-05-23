@@ -1,7 +1,25 @@
 import React from 'react';
+import styles from '../../styles/components/about/about-heading.module.scss';
 
 const AboutHeading = () => {
-  return <div>AboutHeading</div>;
+  return (
+    <div className={styles.wrapper}>
+      <section className={styles.aboutHeading}>
+        <div>
+          <h1>About me</h1>
+          <div className='spacer secondary'></div>
+        </div>
+        <div className={`quote ${styles.quote}`}>
+          <p>
+            “Strive not to be a success, but rather to be of
+            <span className='primary'> value</span>.” <br />
+            <small>~ Albert Einstein</small>
+          </p>
+        </div>
+      </section>
+      <div className='line fit secondary'></div>
+    </div>
+  );
 };
 
 export default AboutHeading;
