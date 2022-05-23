@@ -1,6 +1,11 @@
 .wrapper {
   min-width: 100%;
-  background: linear-gradient(135deg, var(--clr-secondary-700), var(--clr-secondary-800));
+  background: linear-gradient(
+    180deg,
+    var(--clr-neutral-900) 23%,
+    var(--clr-secondary-400),
+    var(--clr-secondary-800) 23.2%
+  );
   color: var(--clr-neutral-150);
 }
 
@@ -9,7 +14,7 @@
   padding: max(5rem, 10vh) clamp(2rem, 10vw, 15rem) 3rem;
 
   form {
-    margin: 5rem auto;
+    margin: 10rem auto 5rem;
     background: linear-gradient(45deg, transparent, var(--clr-secondary-800) 15% 85%, transparent);
 
     h4,
