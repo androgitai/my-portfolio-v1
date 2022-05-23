@@ -16,12 +16,10 @@ const SectionContact = () => {
       ref={contactRef}
     >
       <div className='quote'>
-        <p>
-          "What you can do <span className='secondary'>today</span> ,
-        </p>
-        <p>
-          don't leave it for <span className='secondary'>tomorrow</span> "
-        </p>
+        <q>
+          Don't put off until tomorrow what you can do <span className='secondary'>today</span>
+        </q>
+        <small>~ Benjamin Franklin</small>
         <div className='spacer center secondary'></div>
       </div>
       <h2>
