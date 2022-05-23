@@ -21,6 +21,7 @@ const ProjectsBody = () => {
           </a>
         </Link>
       </div>
+      <div className='line fit primary'></div>
     </div>
   );
 };

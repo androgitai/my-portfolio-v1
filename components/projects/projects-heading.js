@@ -11,11 +11,12 @@ const ProjectsHeading = () => {
         <div className={`quote ${styles.quote}`}>
           <p>
             “Simplicity is the soul of
-            <span className='primary'> efficiency</span> .” <br />
+            <span className='secondary'> efficiency</span> .” <br />
             <small>~ Austin Freeman</small>
           </p>
         </div>
       </section>
+      <div className='line fit primary'></div>
     </div>
   );
 };
