@@ -1,0 +1,17 @@
+.wrapper {
+  min-width: 100%;
+  background: linear-gradient(180deg, var(--clr-neutral-900) 50%, var(--clr-neutral-850));
+  color: var(--clr-neutral-150);
+}
+
+.contactHeading {
+  padding: max(5rem, 15vh) clamp(2rem, 10vw, 15rem) max(3rem, 8vh);
+  position: relative;
+}
+
+.quote {
+  position: absolute;
+  bottom: -30%;
+  right: 0%;
+  transform: scale(0.6);
+}
