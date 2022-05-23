@@ -31,9 +31,16 @@
     text-align: center;
   }
   &Personal {
-    padding: 5rem;
+    padding: 1rem;
     display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
     gap: 5rem;
+
+    @include mq(large) {
+      flex-direction: row;
+    }
+
     .aboutText {
       display: flex;
       flex-direction: column;
@@ -42,19 +49,20 @@
     .portrait {
       max-width: 30%;
       min-width: 15rem;
-      //   flex: 0.5;
       img {
         border-radius: 10px;
       }
     }
   }
   .skills {
-    padding: 0 5rem;
+    padding: 0 1rem;
   }
 
   @include mq(medium) {
   }
   @include mq(large) {
+    // flex-direction: column;
+    // align-items: ;
   }
 }
 
