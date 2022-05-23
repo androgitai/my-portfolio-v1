@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../../styles/components/conatct/conatct.module.scss';
+import styles from '../../styles/components/conatct/contact.module.scss';
 import ContactForm from '../form/contact-form';
 
 const Contact = () => {
@@ -7,9 +7,10 @@ const Contact = () => {
     <div className={styles.wrapper}>
       <section className={styles.contact}>
         <h1>Contact</h1>
-        <div className='line secondary'></div>
+        <div className='spacer  secondary'></div>
         <ContactForm />
       </section>
+      <div className='line secondary fit'></div>
     </div>
   );
 };
