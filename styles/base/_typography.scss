@@ -60,7 +60,9 @@ small,
 }
 
 strong {
-  font-weight: normal;
+  display: block;
+  font-size: var(--fs-400);
+  font-weight: bold;
 }
 
 a {

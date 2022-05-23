@@ -33,8 +33,8 @@ const AboutBody = () => {
               </a>
             </Button>
             <p>
-              Contact at <h4 className='secondary'>info@byandro.com</h4> or send me a message me on
-              the contact page
+              Contact at <strong className='secondary strong'>info@byandro.com</strong> or send me a
+              message me on the contact page
             </p>
           </div>
           <div className={styles.portrait}>
