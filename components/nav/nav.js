@@ -16,29 +16,29 @@ const Nav = () => {
     <Fragment>
       <Social place='nav' />
       <div className={styles.navMenu} onClick={navToggleHandler}>
-        <img src='/icons/menu/icons8-circled-menu-32.png' alt='menu' />
+        <img src='/icons/menu/circled-menu.png' alt='menu' />
       </div>
       <nav className={navStyle}>
         <div className={styles.navBase}>
           <ul className={styles.navList}>
             <li>
               <Link href='/'>
-                <img src='/icons/menu/icons8-home-24.png' alt='home' />
+                <img src='/icons/menu/home.png' alt='home' />
               </Link>
             </li>
             <li>
               <Link href='/projects'>
-                <img src='/icons/menu/icons8-inspect-code-30.png' alt='code' />
+                <img src='/icons/menu/inspect-code.png' alt='code' />
               </Link>
             </li>
             <li>
               <Link href='/about'>
-                <img src='/icons/menu/icons8-person-32.png' alt='aboutme' />
+                <img src='/icons/menu/person.png' alt='aboutme' />
               </Link>
             </li>
             <li>
               <Link href='/contact'>
-                <img src='/icons/menu/icons8-mail-24.png' alt='contact' />
+                <img src='/icons/menu/mail.png' alt='contact' />
               </Link>
             </li>
           </ul>
