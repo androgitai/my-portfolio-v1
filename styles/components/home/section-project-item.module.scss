@@ -46,6 +46,14 @@
     position: relative;
     padding: 0 1rem 2rem;
     overflow: hidden;
+
+    .image a {
+      transition: all 250ms ease-in;
+      &:hover {
+        box-shadow: inset 0 0 10px var(--clr-accent-400), 0 0 10px var(--clr-accent-400);
+      }
+    }
+
     @include mq(medium) {
       padding: 0 3rem 2rem;
     }
