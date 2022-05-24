@@ -1,14 +1,15 @@
 .wrapper {
   min-width: 100%;
-  background: linear-gradient(
-    90deg,
-    var(--clr-secondary-700),
-    var(--clr-neutral-200) 5% 95%,
-    var(--clr-secondary-700)
-  );
+  background: var(--clr-neutral-700);
   color: var(--clr-neutral-150);
 }
 
 .contactBody {
   padding: max(5rem, 10vh) clamp(2rem, 10vw, 15rem) max(5rem, 10vh);
+  form {
+    color: var(--clr-neutral-150);
+    button {
+      color: var(--clr-neutral-150);
+    }
+  }
 }

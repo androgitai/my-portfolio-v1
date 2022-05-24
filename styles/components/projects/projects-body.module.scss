@@ -2,12 +2,7 @@
 
 .wrapper {
   min-width: 100%;
-  background: linear-gradient(
-    90deg,
-    var(--clr-primary-700),
-    var(--clr-neutral-800) 5% 95%,
-    var(--clr-primary-700)
-  );
+  background: var(--clr-neutral-850);
 }
 
 .projectsBody {

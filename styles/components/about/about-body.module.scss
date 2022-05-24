@@ -2,12 +2,8 @@
 
 .wrapper {
   min-width: 100%;
-  background: linear-gradient(
-    90deg,
-    var(--clr-secondary-700),
-    var(--clr-neutral-800) 5% 95%,
-    var(--clr-secondary-700)
-  );
+  background: var(--clr-neutral-800);
+
   color: var(--clr-neutral-150);
   & button,
   & a {
@@ -38,13 +34,24 @@
     gap: 5rem;
 
     @include mq(large) {
+      text-align: unset;
       flex-direction: row;
+    }
+
+    & button {
+      max-width: 40%;
+      min-width: 30%;
+      align-self: center;
+      @include mq(large) {
+        align-self: unset;
+      }
     }
 
     .aboutText {
       display: flex;
       flex-direction: column;
       gap: 3rem;
+      text-align: justify;
     }
     .portrait {
       max-width: 30%;
@@ -56,13 +63,13 @@
   }
   .skills {
     padding: 0 1rem;
-  }
-
-  @include mq(medium) {
-  }
-  @include mq(large) {
-    // flex-direction: column;
-    // align-items: ;
+    img {
+      display: inline-block;
+      max-width: 1.2rem;
+    }
+    p {
+      text-align: justify;
+    }
   }
 }
 
