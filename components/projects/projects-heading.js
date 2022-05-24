@@ -1,9 +1,19 @@
+import { useInView } from 'react-intersection-observer';
+
 import styles from '../../styles/components/projects/projects-heading.module.scss';
 
 const ProjectsHeading = () => {
+  const { ref: headingRef, inView: headingInView } = useInView({
+    threshold: 0.1,
+    triggerOnce: true,
+  });
+
   return (
     <div className={styles.wrapper}>
-      <section className={styles.projectsHeading}>
+      <section
+        className={headingInView ? `${styles.projectsHeading} floatFromTop` : 'hidden'}
+        ref={headingRef}
+      >
         <div>
           <h1>My projects</h1>
           <div className='spacer primary'></div>

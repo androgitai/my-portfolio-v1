@@ -1,10 +1,19 @@
-import React from 'react';
+import { useInView } from 'react-intersection-observer';
+
 import styles from '../../styles/components/conatct/contact-heading.module.scss';
 
 const ContactHeading = () => {
+  const { ref: headingRef, inView: headingInView } = useInView({
+    threshold: 0.1,
+    triggerOnce: true,
+  });
+
   return (
     <div className={styles.wrapper}>
-      <section className={styles.contactHeading}>
+      <section
+        className={headingInView ? `${styles.contactHeading} floatFromTop` : 'hidden'}
+        ref={headingRef}
+      >
         <h1>Contact</h1>
         <div className='spacer  secondary'></div>
         <div className={`quote ${styles.quote}`}>

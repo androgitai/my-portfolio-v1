@@ -1,10 +1,19 @@
-import React from 'react';
+import { useInView } from 'react-intersection-observer';
+
 import styles from '../../styles/components/about/about-heading.module.scss';
 
 const AboutHeading = () => {
+  const { ref: headingRef, inView: headingInView } = useInView({
+    threshold: 0.1,
+    triggerOnce: true,
+  });
+
   return (
     <div className={styles.wrapper}>
-      <section className={styles.aboutHeading}>
+      <section
+        className={headingInView ? `${styles.aboutHeading} floatFromTop` : 'hidden'}
+        ref={headingRef}
+      >
         <div>
           <h1>About me</h1>
           <div className='spacer secondary'></div>
