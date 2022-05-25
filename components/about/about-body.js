@@ -44,11 +44,9 @@ const AboutBody = () => {
               applications. I strive for provide value to people and businesses and help build their
               portfolio to make a bigger and better online presence.
             </p>
-            <Button btnStyle='secondary'>
-              <a href='/publicCV/CV.pdf' target='_blank'>
-                Open CV &#8618;
-              </a>
-            </Button>
+            <a href='/publicCV/CV.pdf' target='_blank'>
+              <Button btnStyle='secondary'>Open CV &#8618;</Button>
+            </a>
             <p>
               Contact at <strong className='secondary strong'>info@byandro.com</strong> or send me a
               message on the contact page
