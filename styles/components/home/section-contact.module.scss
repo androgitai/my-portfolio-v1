@@ -1,3 +1,13 @@
+.wrapper {
+  min-width: 100%;
+  background: linear-gradient(
+    180deg,
+    var(--clr-secondary-100),
+    transparent 5% 95%,
+    var(--clr-secondary-100)
+  );
+}
+
 .contact {
   h2 {
     color: var(--clr-neutral-900);

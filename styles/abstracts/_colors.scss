@@ -6,6 +6,7 @@ $neutral-base: 0;
 $colors: (
   primary: (
     100: $primary-base 90% 96%,
+    150: $primary-base 90% 90%,
     200: $primary-base 90% 80%,
     300: $primary-base 90% 70%,
     400: $primary-base 90% 60%,
@@ -17,6 +18,7 @@ $colors: (
   ),
   secondary: (
     100: $secondary-base 89% 90%,
+    150: $secondary-base 89% 85%,
     200: $secondary-base 89% 80%,
     300: $secondary-base 89% 70%,
     400: $secondary-base 89% 50%,

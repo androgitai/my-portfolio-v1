@@ -2,7 +2,12 @@
 
 .wrapper {
   min-width: 100%;
-  background: var(--clr-neutral-800);
+  background: linear-gradient(
+    to bottom,
+    var(--clr-neutral-700),
+    var(--clr-neutral-850) 20% 80%,
+    var(--clr-neutral-700)
+  );
   color: var(--clr-neutral-150);
 }
 
