@@ -40,7 +40,7 @@ const AboutBody = () => {
             <p>
               I started as a selft-taught developer in 2020 and created the
               <span className='primary'> byAndro</span> brand in 2021 to give a better identity to
-              my work. My goal was to make beautiful, performant and easy to use sites and web
+              my work. My goal was to make beautiful, performant and easy to use websites and web
               applications. I strive for provide value to people and businesses and help build their
               portfolio to make a bigger and better online presence.
             </p>
