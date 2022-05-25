@@ -77,7 +77,8 @@ const AboutBody = () => {
             React/
             <img src='/icons/tech/nextjs.svg' alt='next.js' />
             Next but picking up <img src='/icons/tech/nodejs.svg' alt='node.js' />
-            Node.js alongside <img src='/icons/tech/mongodb.png' alt='mongoDB' />
+            Node.js and <img src='/icons/tech/typescript.png' alt='typescript' />
+            TypeScript alongside <img src='/icons/tech/mongodb.png' alt='mongoDB' />
             MongoDB and <img src='/icons/tech/express.png' alt='express' />
             Express to complete the MERN stack as I am really interested in the back-end as well and
             for testing I use <img src='/icons/tech/jest.svg' alt='jest' />

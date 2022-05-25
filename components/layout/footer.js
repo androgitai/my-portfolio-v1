@@ -6,6 +6,10 @@ const Footer = () => {
     <footer className={styles.footer}>
       <Social place='footer' />
       <p>Copyright&copy; 2022 Andras Kelemen - byAndro</p>
+      <p className={styles.powered}>
+        This page is powered by Next.js(
+        <img src='/icons/tech/nextjs.svg' alt='next.js' />)
+      </p>
     </footer>
   );
 };

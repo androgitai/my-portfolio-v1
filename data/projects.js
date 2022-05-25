@@ -7,8 +7,8 @@ export const projectsData = [
       'Self developed production app where you can manage your invoices with ease in a safe manner.',
     paragraph2:
       'Uses React, Redux, CSS modules and FireBase for backend database and authentication.',
-    image: '/projects/invoiceMe/MainPicDark.jpg',
-    image2: '/projects/invoiceMe/EditInvoiceDark.jpg',
+    image: '/projects/invoiceMe/MainPic.jpg',
+    image2: '/projects/invoiceMe/EditInvoice.jpg',
     image3: '/projects/invoiceMe/InvoiceDetails.jpg',
     reverse: false,
     liveSite: 'https://invoice-me-app.netlify.app',

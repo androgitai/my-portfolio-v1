@@ -1,4 +1,3 @@
-import { Fragment } from 'react';
 import styles from '../../styles/components/home/section-about.module.scss';
 import { useInView } from 'react-intersection-observer';
 
@@ -21,7 +20,7 @@ const SectionAbout = () => {
   });
 
   return (
-    <Fragment>
+    <div className={styles.wrapper}>
       <section className={styles.about}>
         <div className={quoteInView ? 'quote floatFromBot' : 'quote hidden'} ref={quoteRef}>
           <q>
@@ -40,9 +39,9 @@ const SectionAbout = () => {
               A never ending passion for computers, technology, maths and science. Programming
               combines all of them together so I can create beautiful, performant and cutting edge
               web applications as a web developer today. My main focus is JavaScript based
-              technologies, really enjoy working with React, Next.js and Node.js but always looking
-              out for different languages and frameworks to be dived into. Let's the make the web
-              alive!
+              technologies, really enjoy working with React, Next.js but picking up Typescript and
+              Node.js as well. I am always looking out for different languages and frameworks to be
+              dived into. I am driven to the make the web alive!
             </p>
             <div className='line primary'></div>
           </div>
@@ -50,7 +49,7 @@ const SectionAbout = () => {
             <img src='/icons/tech/javascript.svg' alt='js' />
             <img src='/icons/tech/nextjs.svg' alt='next.js' />
             <img src='/icons/tech/react-icon.svg' alt='react.js' />
-            <img src='/icons/tech/nodejs.svg' alt='node.js' />
+            <img src='/icons/tech/typescript.svg' alt='node.js' />
           </div>
           <div className={`${styles.tech} ${aimInView ? 'floatFromBot' : 'hidden'} `} ref={aimRef}>
             <div className={styles.techGrid}>
@@ -90,7 +89,7 @@ const SectionAbout = () => {
           </div>
         </div>
       </section>
-    </Fragment>
+    </div>
   );
 };
 

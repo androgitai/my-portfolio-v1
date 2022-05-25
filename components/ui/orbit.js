@@ -38,7 +38,7 @@ const Orbit = () => {
           <img src='/icons/tech/jest.svg' alt='jest' />
         </li>
         <li>
-          <img src='/icons/tech/nodejs.svg' alt='node.js' />
+          <img src='/icons/tech/typescript.svg' alt='typescript' />
         </li>
       </ul>
     </div>
