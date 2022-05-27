@@ -2,7 +2,7 @@
 
 .contactForm {
   position: relative;
-  color: var(--clr-neutral-900);
+  color: var(--clr-neutral-100);
   padding: 3rem 0;
   margin: 0 auto;
   @include mq(large) {
@@ -10,6 +10,9 @@
   }
   @include mq(xlarge) {
     max-width: 70%;
+  }
+  button {
+    color: var(--clr-neutral-100);
   }
 
   &::before {
@@ -19,9 +22,8 @@
     left: 0;
     height: 20%;
     width: 10%;
-    filter: blur(1px);
     border-radius: 10% 0 0;
-    box-shadow: -2px -2px var(--clr-secondary-300);
+    box-shadow: -2px -2px var(--clr-secondary-400);
   }
   &::after {
     content: '';
@@ -30,9 +32,8 @@
     right: 0;
     height: 20%;
     width: 10%;
-    filter: blur(1px);
     border-radius: 0 0 10%;
-    box-shadow: 2px 2px var(--clr-secondary-300);
+    box-shadow: 2px 2px var(--clr-secondary-400);
   }
 
   fieldset {
@@ -55,13 +56,14 @@
   textarea {
     min-width: 100%;
     border-radius: 10px;
-    border: 1px solid transparent;
-    box-shadow: 0px 0px 3px var(--clr-secondary-400);
+    border: 1px solid var(--clr-secondary-400);
     background: var(--clr-neutral-100);
+    transition: all 250ms ease-in;
     @include mq(large) {
       min-width: 80%;
     }
     &:focus {
+      box-shadow: 0px 0px 5px var(--clr-secondary-500);
       border: 1px solid var(--clr-secondary-400);
       outline: none;
     }
@@ -69,5 +71,10 @@
 
   textarea {
     min-height: 5rem;
+  }
+
+  .error {
+    border: 1px solid var(--clr-error-400) !important;
+    box-shadow: 0px 0px 5px var(--clr-error-400) !important;
   }
 }
