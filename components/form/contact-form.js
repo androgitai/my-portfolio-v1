@@ -5,7 +5,7 @@ import ReCAPTCHA from 'react-google-recaptcha';
 
 import styles from '../../styles/components/form/contact-form.module.scss';
 import Button from '../ui/button';
-import Notification from '../ui/Notification';
+import Notification from '../ui/notification';
 
 const ContactForm = () => {
   const [name, setName] = useState('');
