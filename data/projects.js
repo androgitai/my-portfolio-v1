@@ -47,7 +47,7 @@ export const projectsData = [
     title: 'ROOM',
     subTitle: 'Furniture company landing page',
     paragraph1: 'Interactive landing page. Created from Frontend Mentor design material.',
-    paragraph2: 'Uses Html5, CSS and JavaScript.',
+    paragraph2: 'Uses Html5, Tailwind CSS and JavaScript.',
     image: '/projects/room/room.jpg',
     reverse: true,
     liveSite: 'https://room-homepage-andro.netlify.app/',
