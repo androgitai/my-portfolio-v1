@@ -2,12 +2,7 @@
 
 .wrapper {
   min-width: 100%;
-  background: linear-gradient(
-    180deg,
-    var(--clr-primary-100),
-    transparent 5% 95%,
-    var(--clr-primary-100)
-  );
+  background: linear-gradient(180deg, rgba(#ffffff, 0.9), rgba(#ffffff, 0.7));
 }
 
 .info {
@@ -35,6 +30,9 @@
   gap: 2rem;
   line-height: 1.6;
   word-spacing: 0.3px;
+  background: linear-gradient(180deg, rgba(#ffffff, 0.9), rgba(#ffffff, 0.7));
+  padding: 2rem;
+  border-radius: 15px;
 }
 
 .icons {

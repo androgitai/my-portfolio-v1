@@ -1,11 +1,6 @@
 .wrapper {
   min-width: 100%;
-  background: linear-gradient(
-    180deg,
-    var(--clr-neutral-600),
-    var(--clr-neutral-700) 20% 80%,
-    var(--clr-neutral-600)
-  );
+  background: linear-gradient(180deg, rgba(#000000, 0.8), rgba(#000000, 0.7));
 }
 
 .contact {

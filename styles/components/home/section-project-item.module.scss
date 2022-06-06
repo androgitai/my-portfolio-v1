@@ -47,10 +47,11 @@
     padding: 0 1rem 2rem;
     overflow: hidden;
 
-    .image a {
-      transition: all 250ms ease-in;
-      &:hover {
-        box-shadow: inset 0 0 10px var(--clr-accent-400), 0 0 10px var(--clr-accent-400);
+    .image {
+      margin: 0.5rem;
+      & span:hover {
+        transition: all 250ms ease-in;
+        box-shadow: 0 0 10px var(--clr-accent-400);
       }
     }
 
