@@ -1,4 +1,3 @@
-import { Fragment } from 'react';
 import { useInView } from 'react-intersection-observer';
 
 import styles from '../../styles/components/home/section-contact.module.scss';
