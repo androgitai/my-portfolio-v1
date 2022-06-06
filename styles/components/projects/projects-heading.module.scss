@@ -1,10 +1,11 @@
 .wrapper {
+  background: url('/motivation.jpg') center center/cover no-repeat;
   min-width: 100%;
-  background: linear-gradient(180deg, var(--clr-neutral-800) 50%, var(--clr-neutral-900));
   color: var(--clr-neutral-150);
 }
 
 .projectsHeading {
+  background: rgba(#000000, 0.8);
   padding: max(5rem, 15vh) clamp(2rem, 10vw, 15rem) max(3rem, 8vh);
   position: relative;
 }

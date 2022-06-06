@@ -2,10 +2,11 @@
 
 .wrapper {
   min-width: 100%;
-  background: var(--clr-neutral-900);
 }
 
 .projectsBody {
+  background: rgba(#222222, 0.95);
+  min-width: 100%;
   min-height: 100vh;
   display: grid;
   gap: 7rem;
@@ -27,6 +28,7 @@
 }
 
 .control {
+  background: rgba(#222222, 0.95);
   padding: 0 0.5rem 5rem;
   display: flex;
   flex-direction: column;
