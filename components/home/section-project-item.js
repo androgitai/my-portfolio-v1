@@ -37,7 +37,13 @@ const SectionProjectItem = props => {
           ref={image1Ref}
         >
           <a href={liveSite} target='_blank'>
-            <Image src={image} width='1400px' height='1000px' objectFit='cover' />
+            <Image
+              src={image}
+              width='1400px'
+              height='1000px'
+              objectFit='cover'
+              layout='responsive'
+            />
           </a>
         </div>
         {!props.small && (
@@ -50,7 +56,13 @@ const SectionProjectItem = props => {
             ref={image2Ref}
           >
             <a href={liveSite} target='_blank'>
-              <Image src={image2} width='1400px' height='1000px' objectFit='cover' />
+              <Image
+                src={image2}
+                width='1400px'
+                height='1000px'
+                objectFit='cover'
+                layout='responsive'
+              />
             </a>
           </div>
         )}

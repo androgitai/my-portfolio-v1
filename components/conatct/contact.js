@@ -1,13 +1,14 @@
 import { Fragment } from 'react';
 import ContactBody from './contact-body';
 import ContactHeading from './contact-heading';
+import styles from '../../styles/components/conatct/contact.module.scss';
 
 const Contact = () => {
   return (
-    <Fragment>
+    <div className={styles.contact}>
       <ContactHeading />
       <ContactBody />
-    </Fragment>
+    </div>
   );
 };
 
