@@ -5,6 +5,10 @@
 }
 
 .contactBody {
+  text-align: center;
+  h3 {
+    margin-bottom: 5rem;
+  }
   padding: max(5rem, 10vh) clamp(2rem, 10vw, 15rem) max(5rem, 10vh);
   form {
     color: var(--clr-neutral-150);
