@@ -4,10 +4,10 @@ import styles from '../../styles/components/load/welcome.module.scss';
 const Welcome = () => {
   return (
     <Fragment>
-      <h1 className={styles.welcomeTop}>Welcome to</h1>
-      <h1 className={styles.welcomeBot}>
+      <h2 className={styles.welcomeTop}>Welcome to</h2>
+      <h2 className={styles.welcomeBot}>
         <span>byAndro</span>
-      </h1>
+      </h2>
     </Fragment>
   );
 };

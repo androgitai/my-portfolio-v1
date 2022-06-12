@@ -9,7 +9,7 @@ function MyApp({ Component, pageProps }) {
   return (
     <Layout>
       <Head>
-        <title>byAndro</title>
+        <title>byAndro - Web Development</title>
         <meta
           name='viewport'
           content='initial-scale=1.0,minimum-scale=1.0, maximum-scale = 2.0, width=device-width'
