@@ -16,6 +16,19 @@ export const projectsData = [
   },
   {
     id: 2,
+    title: 'RK Carpentry & Construction',
+    subTitle: 'Homepage for RK Construction.',
+    paragraph1: 'Live production site for a construction company.',
+    paragraph2: 'Uses Next.js and SCSS modules.',
+    image: '/projects/rk-construction/rk-1.jpg',
+    image2: '/projects/rk-construction/rk-2.jpg',
+    image3: '/projects/rk-construction/rk-3.jpg',
+    reverse: false,
+    liveSite: 'https://rkbuilt.co.uk',
+    // gitHub: 'https://rkbuilt.co.uk',
+  },
+  {
+    id: 3,
     title: 'REST Countries',
     subTitle: 'Find detials about any country around the world.',
     paragraph1:
@@ -30,7 +43,7 @@ export const projectsData = [
     gitHub: 'https://github.com/androgitai/REST_Countries',
   },
   {
-    id: 3,
+    id: 4,
     title: 'Forkify',
     subTitle: 'Serach, save and create recipes',
     paragraph1:
@@ -43,7 +56,7 @@ export const projectsData = [
     gitHub: 'https://github.com/androgitai/forkify',
   },
   {
-    id: 4,
+    id: 5,
     title: 'ROOM',
     subTitle: 'Furniture company landing page',
     paragraph1: 'Interactive landing page. Created from Frontend Mentor design material.',
@@ -54,7 +67,7 @@ export const projectsData = [
     gitHub: 'https://github.com/androgitai/RoomHomePage',
   },
   {
-    id: 5,
+    id: 6,
     title: 'Time Tracker',
     subTitle: 'Track you activities',
     paragraph1: 'Small interactive dashboard page. Created from Frontend Mentor design material.',
@@ -64,18 +77,18 @@ export const projectsData = [
     liveSite: 'https://time-dashboard.netlify.app/',
     gitHub: 'https://github.com/androgitai/TimeTrackingDashboard',
   },
-  {
-    id: 6,
-    title: 'Pig Game',
-    subTitle: 'Dice game',
-    paragraph1: 'Small dice game where you have gamble your risks to win.',
-    paragraph2: 'Uses Html5, CSS and JavaScript.',
-    image: '/projects/pig-game/pig-game.jpg',
-    reverse: true,
-    liveSite: 'https://pig-game-andro.netlify.app/',
-    gitHub: 'https://github.com/androgitai/PigGame',
-  },
 ];
+// {
+//   id: 6,
+//   title: 'Pig Game',
+//   subTitle: 'Dice game',
+//   paragraph1: 'Small dice game where you have gamble your risks to win.',
+//   paragraph2: 'Uses Html5, CSS and JavaScript.',
+//   image: '/projects/pig-game/pig-game.jpg',
+//   reverse: true,
+//   liveSite: 'https://pig-game-andro.netlify.app/',
+//   gitHub: 'https://github.com/androgitai/PigGame',
+// },
 // {
 //     id: 6,
 //     title: 'Burger Builder',

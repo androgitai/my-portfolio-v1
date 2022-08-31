@@ -34,8 +34,7 @@ const SectionProjectItem = props => {
           className={
             image1InView ? `${styles.image} ${reverse ? 'slideInRight' : 'slideInLeft'}` : 'hidden'
           }
-          ref={image1Ref}
-        >
+          ref={image1Ref}>
           <a href={liveSite} target='_blank'>
             <Image
               src={image}
@@ -53,8 +52,7 @@ const SectionProjectItem = props => {
                 ? `${styles.image} ${reverse ? 'slideInRight' : 'slideInLeft'}`
                 : 'hidden'
             }
-            ref={image2Ref}
-          >
+            ref={image2Ref}>
             <a href={liveSite} target='_blank'>
               <Image
                 src={image2}
@@ -74,8 +72,7 @@ const SectionProjectItem = props => {
             ? `${styles.projectTxt} ${reverse ? 'slideInLeft' : 'slideInRight'}`
             : 'hidden'
         }
-        ref={projectTextRef}
-      >
+        ref={projectTextRef}>
         <h3>
           {title}
           <div className={`line ${props.style}`}></div>
@@ -85,12 +82,14 @@ const SectionProjectItem = props => {
         <p>{paragraph1}</p>
         <p>{paragraph2}</p>
         <div className={styles.control}>
-          <Button btnStyle={props.style}>
-            <img src='/icons/social/github2.png' alt='github' />
-            <a href={gitHub} target='_blank'>
-              Code
-            </a>
-          </Button>
+          {gitHub && (
+            <Button btnStyle={props.style}>
+              <img src='/icons/social/github2.png' alt='github' />
+              <a href={gitHub} target='_blank'>
+                Code
+              </a>
+            </Button>
+          )}
           <Button btnStyle={props.style}>
             <img src='/icons/sections/website.png' alt='github' />
             <a href={liveSite} target='_blank'>
